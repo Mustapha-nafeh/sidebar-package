@@ -1,0 +1,248 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+:root {
+  --primary: #4089f8;
+  --primary-bg: #a6c9ff;
+  --input-border-radius: 8px;
+  --shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
+  --error: #ff4d49;
+  --button-padding: 5px 10px;
+  --button-border-radius: 4px;
+  --main-bg: #f7f7f9;
+  --icon-bg: #bdbdbd;
+  --input-border: #d1d5db;
+  --primary-transparent: rgba(2, 119, 189, 0.05);
+  --hint: rgba(76, 78, 100, 0.6);
+  --success: #72e128;
+  --dark-green: #27ae60;
+  --red: #eb5757;
+  --yellow: #ffb304;
+  --primary-text-light: #4c4e64de;
+  --light-gray: rgba(76, 78, 100, 0.12);
+  --light-gray-text: rgba(76, 78, 100, 0.38);
+  --title-text: #4b5563;
+  --sub-title-text: #6b7280;
+  --body-text: #000000;
+  --deactivated-text: #9ca3af;
+  --colored-text: #ffffff;
+  --secondary: #26c6f9;
+  --icon-color: #d1d5db;
+  --deactivated-button: #e5e7eb;
+  --sidebar: rgba(236, 236, 239, 1);
+  --sidebar-color: #003f6d;
+  --gray: #808080;
+  --chip-bg: #fecaca;
+  --chip-text: #991b1b;
+}
+
+body {
+  background-color: var(--main-bg);
+}
+
+.bg-main {
+  background-color: var(--main-bg);
+}
+
+.MuiDataGrid-root .MuiDataGrid-cell:focus-within {
+  outline: none !important;
+}
+
+.MuiDataGrid-root .MuiDataGrid-columnHeader:focus-within {
+  outline: none !important;
+}
+
+.MuiDataGrid-root .MuiDataGrid-columnHeader {
+  user-select: none !important;
+}
+
+.spectrum-Field_d2db1f,
+.spectrum_b37d53,
+.spectrum-Field-field_d2db1f,
+.spectrum-Textfield-input_73bc77,
+.spectrum-FieldButton_e2d99e {
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
+
+.react-spectrum-DatePicker-cell_f02f90,
+.react-spectrum-Datepicker-literal_f02f90 {
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
+
+.spectrum-Icon_e2d99e {
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
+
+.ps-submenu-content {
+  background-color: #003f6d !important;
+}
+
+.css-ewdv3l:not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0 !important;
+  margin-top: calc(
+    1rem /* 16px */ * calc(1 - var(--tw-space-y-reverse))
+  ) !important;
+  margin-bottom: calc(1rem /* 16px */ * var(--tw-space-y-reverse)) !important;
+}
+
+/* For WebKit browsers */
+#noScrollBar::-webkit-scrollbar {
+  width: 5rem;
+  display: none !important;
+}
+#noScrollBar {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+.ps-collapsed {
+  border-top-right-radius: 40px !important;
+  border-bottom-right-radius: 40px !important;
+}
+.ps-sidebar-container {
+  border-top-right-radius: 40px !important;
+  border-bottom-right-radius: 40px !important;
+}
+
+/* styles for the VerticalLinkedList component */
+.list-ic li {
+  position: relative;
+}
+.list-ic li span {
+  display: inline-block;
+  font-weight: 800;
+  width: 2.5em;
+  height: 2.5em;
+  text-align: center;
+  line-height: 2em;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  position: relative;
+}
+.list-ic li::before {
+  content: "";
+  position: absolute;
+  background: black;
+  width: 0.5px;
+  z-index: -1;
+}
+
+.list-ic.vertical {
+  padding: 0;
+  margin: 0;
+}
+.list-ic.vertical li {
+  list-style-type: none;
+  text-align: left;
+}
+.list-ic.vertical li span {
+  margin: 2.3em 0;
+}
+.list-ic.vertical li::before {
+  top: -40px;
+  left: 1.2em;
+  width: 1px;
+  height: 6em;
+}
+.list-ic li:first-child::before {
+  display: none;
+}
+.list-ic .active {
+  background: dodgerblue;
+}
+.list-ic .active ~ li {
+  background: lightblue;
+}
+.list-ic .active ~ li::before {
+  background: lightblue;
+}
+
+/* fixed the date picker in dialog */
+.JuTe6q_spectrum{
+  isolation: unset !important;
+}
+
+
+/* styles for the VerticalLinkedList component */
+.list-ic li {
+  position: relative;
+}
+.list-ic li span {
+  display: inline-block;
+  font-weight: 800;
+  width: 2.5em;
+  height: 2.5em;
+  text-align: center;
+  line-height: 2em;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  position: relative;
+}
+.list-ic li::before {
+  content: "";
+  position: absolute;
+  background: black;
+  width: 0.5px;
+  z-index: -1;
+}
+
+.list-ic.vertical {
+  padding: 0;
+  margin: 0;
+}
+.list-ic.vertical li {
+  list-style-type: none;
+  text-align: left;
+}
+.list-ic.vertical li span {
+  margin: 2.3em 0;
+}
+.list-ic.vertical li::before {
+  top: -40px;
+  left: 1.2em;
+  width: 1px;
+  height: 6em;
+
+}
+.list-ic li:first-child::before {
+  display: none;
+}
+.list-ic .active {
+  background: dodgerblue;
+}
+.list-ic .active ~ li {
+  background: lightblue;
+}
+.list-ic .active ~ li::before {
+  background: lightblue;
+}
+
+
+/* fixed the date picker in dialog */
+/* .JuTe6q_spectrum{
+  isolation: unset !important;
+} */
+
+/* change the textField input bg */
+.css-1rirk1w-MuiInputBase-root-MuiFilledInput-root.Mui-disabled{
+  background-color: rgb(247, 247, 247) !important;
+}
+
+/* table header */
+.MuiDataGrid-columnHeaders{
+  background-color: rgb(245, 245, 247) !important;
+}

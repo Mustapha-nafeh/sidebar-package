@@ -1,0 +1,1 @@
+export {SidebarLayout} from "./src/verticalFeature/vertical";
