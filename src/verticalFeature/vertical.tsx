@@ -1,7 +1,4 @@
 "use client";
-// import SubItemIcon from "@/components/icons/SubItemIcon";
-// import { useGetAllFoldersQuery } from "@/core/rtk-query/folders";
-// import { usePathname, useRouter } from "next/navigation";
 import { Fragment, ReactNode } from "react";
 import * as rdd from "react-device-detect";
 import { useTranslation } from "react-i18next";
@@ -13,9 +10,6 @@ import {
   SubMenu,
   menuClasses,
 } from "react-pro-sidebar";
-// import LogoutDialog from "./LogoutDialog";
-
-// import setLogoutDialog from "../../redux/layout-slice";
 import { SidebarHeader } from "../vertical/SidebarHeader";
 import { IconProps } from "../vertical/icons/types";
 

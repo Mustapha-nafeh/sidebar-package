@@ -1,30 +1,45 @@
-# React + TypeScript + Vite
+# SidebarLayout Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This component represents the sidebar layout used in your application. It accepts the following props:
 
-Currently, two official plugins are available:
+## Props
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- `collapsed`: (Boolean) Indicates whether the sidebar is collapsed.
+- `rtl`: (Boolean) Right-to-left layout indicator.
+- `theme`: (String) Theme used for the sidebar layout.
+- `toggled`: (Boolean) Indicates whether the sidebar is toggled.
+- `broken`: (Boolean) Indicates whether the sidebar layout is broken.
+- `expanded`: (Boolean) Indicates whether the sidebar is expanded.
+- `open`: (Boolean) Indicates whether the sidebar is open.
+- `navItems`: (Array) Array of navigation items.
+- `footerItems`: (Array) Array of items for the footer.
+- `navList`: (Array) List of navigation items.
+- `dispatch`: (Function) Function for dispatching actions.
+- `imgUrl`: (String) URL for the sidebar image when not collapsed.
+- `collapsedImgUrl`: (String) URL for the sidebar image when collapsed.
+- `path`: (String) Current path.
+- `setLogoutDialog`: (Function) Function to set the logout dialog.
+- `setBroken`: (Function) Function to set the sidebar layout as broken. (use it with the broken boolean)
+- `setExpanded`: (Function) Function to set the sidebar as expanded. (use it with the expanded boolean)
+- `setOpen`: (Function) Function to set the sidebar as open. (use it with the open boolean)
+- `setToggled`: (Function) Function to set the sidebar as toggled. (use it with the toggled boolean)
+- `setCollapsed`: (Function) Function to set the sidebar as collapsed. (use it with the collapsed boolean)
 
-## Expanding the ESLint configuration
+## Usage
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+```jsx
+import SidebarLayout;
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
+const MyComponent = () => {
+  // Your code here
+  return (
+    <SidebarLayout
+      // ...props
+    />
+  );
 }
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Note
+
+Please ensure to provide all required props for the `SidebarLayout` component to render correctly.
+```
